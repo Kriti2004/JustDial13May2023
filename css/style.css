@@ -9,6 +9,17 @@ header{
     width: 94%;
     margin: auto;
 }
+ul > li:hover{
+    background-color: #EDEDED;
+    cursor: pointer;
+}
+.k_menu > li:hover ul{
+    display: block;
+}
+.k_submenu{
+    width: 100px;
+    display: none;
+}
 main{
     height: 3119px;
     margin-top: 5rem !important;
