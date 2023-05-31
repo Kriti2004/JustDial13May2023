@@ -5,7 +5,7 @@ body{
     border: 1px red dashed;
 }
 header{
-    height: 81px;
+    min-height: 81px;
     width: 94%;
     margin: auto;
 }
@@ -39,9 +39,16 @@ main{
 .mt-5.k_mt-5{
     margin-top: 5rem !important;
 }
+/*.k_form_col{
+    height: 50px;
+*/
 
 
-
+@media only screen and (max-width:576px) {
+    .k_form_col{
+        height: 50px;
+    }
+  }
 
 
 @media (min-width: 1400px){
