@@ -39,14 +39,23 @@ main{
 .mt-5.k_mt-5{
     margin-top: 5rem !important;
 }
-/*.k_form_col{
-    height: 50px;
-*/
+.k_tnr{
+    font-family: 'Times New Roman', Times, serif;
+}
+.k_fs{
+    font-weight: bold;
+    font-size: 16px;
+    color: #333 !important;
+    opacity: 0.5;
+}
 
 
 @media only screen and (max-width:576px) {
     .k_form_col{
         height: 50px;
+    }
+    .k_mt-5{
+        padding-top: 40px;
     }
   }
 
