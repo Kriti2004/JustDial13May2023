@@ -57,6 +57,12 @@ main{
     .k_mt-5{
         padding-top: 40px;
     }
+    footer{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+    }
   }
 
 
