@@ -16,80 +16,109 @@
     <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-fullscreen">
             <div class="modal-content">
-                <div class="modal-header border-bottom-0">
-                    <div class="float-start">
-                        <button type="button" class="btn-close float-start" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col">
-                            <a href="#" class="btn text-body-tertiary fw-bold">Sign In</a>
+                <div class="modal-body p-0">
+                    <div class="d-none">
+                        <div class="clearfix">
+                            <div class="float-start ms-3">
+                                <button type="button" class="btn-close float-start" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
                         </div>
-                        <div class="col text-end">
-                            <a href="#"><img class="w-25" src="./img/profile.png"></a>
+                        <div class="row m-0">
+                            <div class="col">
+                                <a href="#" class="btn text-body-tertiary fw-bold">Sign In</a>
+                            </div>
+                            <div class="col text-end">
+                                <a href="#"><img class="w-25 me-3" src="./img/profile.png"></a>
+                            </div>
                         </div>
+                        <div class="mt-3">
+                            <button type="button" class="btn border-light-subtle rounded-pill me-3 ms-3">Saved</button>
+                            <button type="button" class="btn border-light-subtle rounded-pill me-3">Favorites</button>
+                            <button type="button" class="btn border-light-subtle rounded-pill me-3">Interests</button>
+                        </div>
+                        <ul class="nav flex-column mt-4">
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link active text-body-tertiary" aria-current="page" href="#"><img class="img-fluid me-3" src="./img/Lang.svg">English</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid ms-1 me-2" src="./img/feed.png" width="25px" height="25px">&nbsp; &nbsp;Feedback</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/help.svg">Customer service</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/list.svg">List Your Business <img class="img-fluid" style="height: 25px;" src="./img/banner/freeanimation2x.gif" /></a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/advert.svg">Advertise</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/mytrans.svg">My Transaction</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/wish..svg">Wishlist</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/manage.svg">Manage Quotes</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/wah.svg">We are hiring</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/settings.svg">Settings</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/privacy.svg">Private Policy</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/ir.svg">Investor Relation</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/new.svg">Whats New</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/others.svg">Others</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary ms-2"><img class="img-fluid ms-0" src="./img/login.png" width="25px" height="25px">&nbsp; &nbsp;  Login</a>
+                            </li>
+                            <li class="nav-item mt-2 mb-2">
+                                <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/logout.svg">Logout</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div>
-                        <button type="button" class="btn border-light-subtle rounded-pill me-3">Saved</button>
-                        <button type="button" class="btn border-light-subtle rounded-pill me-3">Favorites</button>
-                        <button type="button" class="btn border-light-subtle rounded-pill me-3">Interests</button>
+                    <div class="d-block">
+                        <button class="btn position-absolute top-0 end-0 text-white mt-3 me-3 rounded-4 pb-1 pt-1" style="background-color: rgba(0, 0, 0, 0.4);" data-bs-dismiss="modal">Skip</button>
+                        <img class="img-fluid" src="./img/banner/login_banner_28mar.avif" />
+                        <form class="bg-white p-5 rounded-5  rounded-bottom-0 position-relative" style="top:-15px;">
+                            <div class="mb-3 text-center">
+                                <h4>India's # 1 Local Search Engine</h4>
+                            </div>
+                            <div class="mb-3 border rounded">
+                                <div class="row m-0">
+                                    <div class="col-2 p-0"><button class="btn">+91</button></div>
+                                    <div class="col-10 p-0"><input type="text" class="form-control shadow-none border-0" placeholder="Mobile Number" id="exampleInputPassword1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary disabled pt-2 pb-2 fs-5 opacity-25" type="button">Login with OTP</button>
+                            </div>
+                            
+                            <hr class="mt-4 ms-4 w-25 float-start">
+                            <div class="text-center bg-white mt-2 float-start">or continue with</div>
+                            <hr class="mt-4 w-25 float-start">
+                            <div class="row">
+                                <div class="d-grid gap-2 float-start">
+                                    <button class="col-12 btn btn-white disabled pb-2 fs-5 border-light-subtle w-100" type="button"><span style="color: black;"><img src="./img/truecaller-svg.svg" />Truecaller</span></button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <ul class="nav flex-column mt-4">
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link active text-body-tertiary" aria-current="page" href="#"><img class="img-fluid me-3" src="./img/Lang.svg">English</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid ms-1 me-2" src="./img/feed.png" width="25px" height="25px">&nbsp; &nbsp;Feedback</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/help.svg">Customer service</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/list.svg">List Your Business</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/advert.svg">Advertise</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/mytrans.svg">My Transaction</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/wish..svg">Wishlist</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/manage.svg">Manage Quotes</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/wah.svg">We are hiring</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/settings.svg">Settings</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/privacy.svg">Private Policy</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/ir.svg">Investor Relation</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/new.svg">Whats New</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/others.svg">Others</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary ms-2"><img class="img-fluid ms-0" src="./img/login.png" width="25px" height="25px">&nbsp; &nbsp;  Login</a>
-                        </li>
-                        <li class="nav-item mt-2 mb-2">
-                            <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/logout.svg">Logout</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="container bg-white k_cont k_tbdr">
         <header class="fixed-top k_tbdr bg-white">
             <div class="row h-100">
@@ -105,7 +134,7 @@
                               <a class="nav-link active bg-primary text-white rounded-pill pt-1 pb-1" aria-current="page" href="#">Open App</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link mt-1 pt-0 pb-0" href="#">
+                              <a class="nav-link mt-1 pt-0 pb-0" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="fa-solid fa-bell text-dark"></i>
                               </a>
                             </li>
@@ -194,13 +223,13 @@
                     </div>
                     <div class="col-3 d-flex align-items-center p-0">
                         <a href="#" class="btn btn-sm">
-                            <img class="img-fluid ms-4" src="./img/3.svg"><br>
+                            <img class="img-fluid ms-4" src="./img/3.svg">
                             &nbsp; &nbsp;  &nbsp; Travel
                         </a>
                     </div>
                     <div class="col-3 d-flex align-items-center p-0">
                         <a href="#" class="btn btn-sm">
-                            <img class="img-fluid ms-4" src="./img/4.svg"><br>
+                            <img class="img-fluid ms-4" src="./img/4.svg">
                             &nbsp; &nbsp; &nbsp; Beauty
                         </a>
                     </div>
@@ -218,7 +247,7 @@
                     </div>
                     <div class="col-3 d-flex align-items-center p-0">
                         <a href="#" class="btn btn-sm">
-                            <img class="img-fluid" src="./img/7.svg"><br>
+                            <img class="img-fluid d-block ps-4" src="./img/7.svg">
                             Rent & Hire
                         </a>
                     </div>
@@ -230,19 +259,19 @@
                     </div>
                     <div class="col-3 d-flex align-items-center p-0">
                         <a href="#" class="btn btn-sm">
-                            <img class="img-fluid" src="./img/9.svg"><br>
+                            <img class="img-fluid d-block ps-4" src="./img/9.svg">
                             Home Services
                         </a>
                     </div>
                     <div class="col-3 d-flex align-items-center p-0">
                         <a href="#" class="btn btn-sm">
-                            <img class="img-fluid ms-4" src="./img/10.svg"><br>
+                            <img class="img-fluid ms-4" src="./img/10.svg">
                             &nbsp; &nbsp; &nbsp; Jobs
                         </a>
                     </div>
                     <div class="col-3 d-flex align-items-center p-0">
                         <a href="#" class="btn btn-sm">
-                            <img class="img-fluid ps-2" src="./img/11.svg">
+                            <img class="img-fluid ps-4 d-block" src="./img/11.svg">
                             Repair & Services
                         </a>
                     </div>
@@ -254,14 +283,14 @@
                     </div>
                     <div class="col-3 d-flex align-items-center p-0">
                         <a href="#" class="btn btn-sm">
-                            <img class="img-fluid ps-3" src="./img/13.svg"><br>
+                            <img class="img-fluid d-block ps-4" src="./img/13.svg">
                             &nbsp; &nbsp; &nbsp;Loans
                         </a>
                     </div>
                     <div class="col-3 d-flex align-items-center p-0">
                         <a href="#" class="btn btn-sm">
-                            <img class="img-fluid ps-2" src="./img/14.svg"><br>
-                            Real Estate
+                            <img class="img-fluid ps-4 d-block" src="./img/14.svg">
+                            &nbsp; Real Estate
                         </a>
                     </div>
                     <div class="col-3 d-flex align-items-center p-0">
@@ -272,11 +301,13 @@
                     </div>
                     <div class="col-3 d-flex align-items-center p-0">
                         <a href="#" class="btn btn-sm">
-                            <img class="img-fluid ps-2" src="./img/2.svg"><br>
+                            <img class="img-fluid ps-4 d-block" src="./img/showmore.svg">
                             Show More
                         </a>
                     </div>
                 </div>
+                <button class="px-2 pt-0 pb-0 mb-3 border-danger ms-4 mt-0 rounded text-danger fw-bold" style="font-size: 9px;">Instant</button>
+                <button class="px-2 pt-0 pb-0 mb-3 border-danger ms-5 rounded mt-0 text-danger fw-bold" style="font-size: 9px;">Explore</button>
             </div>
             <div class="k_m2 mt-2">
                 <a href="#">
