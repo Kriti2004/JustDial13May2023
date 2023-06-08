@@ -6,9 +6,46 @@ body{
 }
 header{
     min-height: 81px;
+    z-index: 1;
 }
-.m11{
+.k_m11{
     height: 275px;
+}
+.k_slider img{
+    height: 275px;
+    width: 100%;
+}
+.carousel-indicators button{
+    width: 7px !important;
+    height: 7px !important;
+}
+.k_ccp, .k_ccn{
+    visibility: hidden;
+}
+.k_mainslider:hover{
+    cursor: pointer;
+}
+.k_mainslider .k_ccp, .k_mainslider .k_ccn{
+    background-color: rgba(0,0,0,0.5);
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+.k_mainslider:hover .k_ccp, .k_mainslider:hover .k_ccn{
+    visibility: visible !important;
+}
+ul.k_m22_icon > li >a:hover{
+    background-color: #fff;
+}
+ul.k_m22_icon > li > a:hover > img{
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,.05);
+}
+.k_m22 li a{
+    margin: 0px 24px 30px 15px;
+}
+.k_m22 li > a > img{
+    width: 65px;
+    height: 65px;
 }
 ul > li:hover{
     background-color: #EDEDED;
