@@ -8,7 +8,7 @@ header{
     min-height: 81px;
     z-index: 1;
 }
-.k_m11{
+.k_m22{
     height: 275px;
 }
 .k_slider img{
@@ -19,9 +19,6 @@ header{
     width: 7px !important;
     height: 7px !important;
 }
-.k_ccp, .k_ccn{
-    visibility: hidden;
-}
 .k_mainslider:hover{
     cursor: pointer;
 }
@@ -30,20 +27,27 @@ header{
     width: 30px;
     height: 30px;
     border-radius: 30px;
+    visibility: visible;
 }
 .k_mainslider:hover .k_ccp, .k_mainslider:hover .k_ccn{
     visibility: visible !important;
 }
-ul.k_m22_icon > li >a:hover{
+ul.k_m33_icon > li >a:hover{
     background-color: #fff;
 }
-ul.k_m22_icon > li > a:hover > img{
+ul.k_m33_icon > li > a:hover > img{
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,.05);
 }
-.k_m22 li a{
-    margin: 0px 24px 30px 15px;
+/*.k_m33{
+    min-height: 275px;
+}*/
+.k_m44{
+    height: 540px;
 }
-.k_m22 li > a > img{
+.k_m33 li a{
+    margin: 0px 18px 30px 15px;
+}
+.k_m33 li > a > img{
     width: 65px;
     height: 65px;
 }
@@ -60,7 +64,6 @@ ul > li:hover{
 }
 main{
     padding-bottom: 100px;
-    margin-top: 5rem !important;
 }
 .k_footer1{
     height: 112px;
