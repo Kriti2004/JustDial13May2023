@@ -65,6 +65,26 @@ ul > li:hover{
 main{
     padding-bottom: 100px;
 }
+.k_city_input{
+    background: #EEE;
+}
+.k_scrollToTop{
+    animation-name: stp;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes stp{
+    from{
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
 .k_footer1{
     height: 112px;
 }
@@ -89,7 +109,14 @@ main{
     color: #333 !important;
     opacity: 0.5;
 }
-
+.k_search_form{
+    position: fixed !important;
+    top: 15px;
+    left: 300px;
+    z-index: 10000;
+    background-color: white;
+    transition: all linear 5s;
+}
 .k_animation{
     animation-name: kanimation;
     animation-iteration-count: infinite;
@@ -130,6 +157,10 @@ main{
 
 
 @media only screen and (max-width:576px) {
+    .k_headright{
+        display: flex;
+        justify-content: center !important;
+    }
     .k_form_col{
         height: 50px;
     }

@@ -13,6 +13,9 @@
 </head>
 <body>
     <!-- Modal -->
+    <button class="btn k_scrollToTop bg-light rounded-circle position-fixed bottom-0 end-0" style="bottom: 36px !important; right: 10px !important;">
+        <i class="fa-solid fa-chevron-up fa-lg"></i>
+    </button>
     <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-fullscreen">
             <div class="modal-content">
@@ -127,7 +130,7 @@
                         <img class="img-fluid mt-2" src="./img/logo.svg">
                     </a>
                 </div>
-                <div class="col-8 col-sm-3  k_form_col k_tbdr">
+                <div class="col-8 col-sm-3 k_form_col k_tbdr d-block d-sm-none">
                     <div class="d-block d-sm-none ">
                         <ul class="nav float-end mt-2 k_tnr">
                             <li class="nav-item">
@@ -146,7 +149,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-sm-7 pt-2 ps-3 pe-3">
+                <div class="col-12 col-sm-10 pt-2 ps-3 pe-3 d-flex justify-content-end k_headright">
                     <form class="d-sm-none d-md-none border mb-2  pt-0 pb-0 border-darktle-subtle p-1 rounded-3">
                         <div class="row">
                             <div class="col-1 ps-1">
@@ -164,7 +167,7 @@
                             </div>
                         </div>
                     </form>
-                    <div class="d-none d-sm-block k_tbdr">
+                    <div class="d-none d-sm-block k_tbdr float-end">
                         <ul class="nav mt-3 ms-3 k_menu">
                             <li class="nav-item">
                                 <a class=" ps-2 pe-2 nav-link active" aria-current="page" href="#">
@@ -500,18 +503,21 @@
                                 </div>
                             </div>
                        </div>
-                        <form>
+                        <form class="">
                             <div class="row m-0  k_tbdr">
                                 <div class="col-4 k_tbdr">
-                                    <input type="text" class="form-control shadow-none border-dark pt-3 pb-3" placeholder="Kashipur Samastipur" aria-label="First name">
+                                    <div class="k_city_input  border-dark d-flex d-flex-row align-items-center  border border-dark rounded-2">
+                                        <img class="img-fluid" style="width: 20px;" src="data:image/png;base64,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" />
+                                        <input type="text" class="form-control p-3 form-control-sm bg-transparent border-0 shadow-none k_city_input" placeholder="Kashipur Samastipur" aria-label="First name">
+                                    </div>
                                 </div>
                                 <div class="col-8 k_tbdr">
-                                    <div class="row m-0 border border-dark rounded-4">
-                                        <div class="col-9">
+                                    <div class="row m-0 border border-dark rounded-2">
+                                        <div class="col-9 p-0">
                                             <input type="text" class="form-control shadow-none border-0 pt-3 pb-3" placeholder="Search for expert service" aria-label="Last name">
                                         </div>
-                                        <div class="col-3">
-                                            <div class="d-flex flex-row mb-3">
+                                        <div class="col-3 p-0">
+                                            <div class="d-flex flex-row">
                                                 <div class="p-2">
                                                     <img src="./img/jd_mic_icon.svg" />
                                                 </div>
